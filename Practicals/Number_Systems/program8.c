@@ -1,25 +1,20 @@
 #include<stdio.h>
 void main(){
-	int num;
-
-	int sum=0;
-	int num2=0;
-	printf("Enter number::");
+	int num,sum=0;
+	printf("Enter the number ");
 	scanf("%d",&num);
-         int num1=num;         
-	for(int i=1;i<num;i++){
+
+	for(int i=1;i<=num/2;i++){
 		if(num%i==0){
-		     sum = sum*10+i;	
+			sum+=i;
 		}
 	}
-	while(num2!=0){
-         sum += num2%10;
+	if(sum == num){
+		printf("%d is a perfect number",num);
 	}
-	if(sum = num1){
-		printf("number is perfect number");
-	}
-	else{
-		printf("number is not perfect number");
+
+	else {
+		printf("%d is not a perfect number",num);
 	}
 }
 
